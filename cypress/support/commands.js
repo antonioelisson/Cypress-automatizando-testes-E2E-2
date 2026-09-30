@@ -1,4 +1,4 @@
-Cypress.Commands.add('login', (email, senha) => {
+Cypress.Commands.add('login', (email, senha) => { 
     cy.session([email, senha], () => {
         cy.visit('/login')
         cy.get('[data-test="inputLoginEmail"]').type(email)

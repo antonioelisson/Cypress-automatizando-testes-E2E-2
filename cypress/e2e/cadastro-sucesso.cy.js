@@ -23,7 +23,7 @@ describe('Página de cadastro', () => {
             cy.get('[data-test="inputSenhaVerificada"]').type('Senha123');
             cy.get('.sc-bcXHqe').click();
             cy.contains('h2', 'Agora, os dados técnicos:').should('be.visible');
-            cy.get('.sc-laZRCg').should('exist').should('be.visible');
+            cy.get('.sc-laZRCg').should('exist').and('be.visible');
 
         })
     })

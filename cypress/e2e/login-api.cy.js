@@ -6,8 +6,8 @@ describe('Testes em API', () => {
         })
 
 
-        it('GET via url front para teste em resposta da home', () => {
-            cy.request("GET", "/").should((response) => {
+        it.only('GET via url front para teste em resposta da home', () => {
+            cy.request('GET', '/').should((response) => {
                 expect(response.status).to.eq(200);
             });
         });

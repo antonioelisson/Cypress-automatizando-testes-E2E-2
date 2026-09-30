@@ -1,0 +1,9 @@
+{
+    "include": [
+      "../node_modules/cypress",
+      "**/*.js"
+    ]
+}
+
+//  indica ao VSCode onde ele deve procurar pelos arquivos do Cypress para entender seus métodos e funções.
+// autocomplete do Cypress no VSCode
